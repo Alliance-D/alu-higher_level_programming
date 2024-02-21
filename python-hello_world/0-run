@@ -1,0 +1,4 @@
+#!/bin/bash
+#shell script that runs oythin script
+echo "starting python file $PYFILE"
+exec "$PYFILE"
