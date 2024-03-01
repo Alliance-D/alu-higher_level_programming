@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#fizzbuzz
+# fizzbuzz
 def fizzbuzz():
     for i in range(100):
         if i % 5 == 0 and i % 3 == 0:
