@@ -1,4 +1,6 @@
-cript that takes in a URL, sends a request to the URL and dsiplays
+#!/usr/bin/python3
+"""
+    Script that takes in a URL, sends a request to the URL and dsiplays
     value of the variable X-Request-Id
 """
 import requests

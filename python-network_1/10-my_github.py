@@ -1,4 +1,6 @@
-cript that takes GitHub Credentials (username and password)
+#!/usr/bin/python3
+"""
+script that takes GitHub Credentials (username and password)
     used GitHub API to display your id
 """
 import requests

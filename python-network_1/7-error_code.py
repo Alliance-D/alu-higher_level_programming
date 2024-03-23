@@ -1,4 +1,6 @@
-cript that takes in a URL sends a POST request to that URL
+#!/usr/bin/python3
+"""
+    Script that takes in a URL sends a POST request to that URL
     Displays the body of the response
 """
 import requests

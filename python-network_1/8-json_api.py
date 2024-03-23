@@ -1,4 +1,6 @@
-cript that takes in a letter and sends a POST request to
+#!/usr/bin/python3
+"""
+    Script that takes in a letter and sends a POST request to
     https://0.0.0.0:5000/search_user with the letter as a parameter
     the letter is sent in variable q, otherwise q is empty
     displays [<id>] <name> if repsonse is properly JSON formatted

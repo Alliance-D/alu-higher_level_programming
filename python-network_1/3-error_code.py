@@ -1,4 +1,6 @@
- script that takes in a URL and sends a request to the URL
+ #!/usr/bin/python3
+"""
+    script that takes in a URL and sends a request to the URL
     and displays the body of the response decoded in utf-8.
     urllib.error.HTTPError is managed and printed in the form
     Error code: <HTTP status code>

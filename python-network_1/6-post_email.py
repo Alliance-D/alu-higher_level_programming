@@ -1,4 +1,6 @@
-cript that takes in a URL and an email sends a POST request to that URL
+#!/usr/bin/python3
+"""
+    Script that takes in a URL and an email sends a POST request to that URL
     with the email as a parameter.
     Displays the body of the response
 """

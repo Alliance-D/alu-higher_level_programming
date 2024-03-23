@@ -1,4 +1,6 @@
-cript that fetches https://intranet.htbtn.io/status
+#!/usr/bin/python3
+"""
+    Script that fetches https://intranet.htbtn.io/status
 """
 
 import requests
