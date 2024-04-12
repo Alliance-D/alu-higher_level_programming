@@ -1,35 +1,25 @@
 #!/usr/bin/python3
 """
-This script  takes in the name of a state
-as an argument and lists all cities of that
-state, using the database `hbtn_0e_4_usa`.
+This script defines a State class and
+a Base class to work with MySQLAlchemy ORM.
 """
 
-import MySQLdb
-from sys import argv
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 
-if __name__ == '__main__':
+Base = declarative_base()
+
+
+class State(Base):
+    """State class
+
+    Attributes:
+        __tablename__ (str): The table name of the class
+        id (int): The State id of the class
+        name (str): The State name of the class
+
     """
-    Access to the database and get the cities
-    from the database.
-    """
+    __tablename__ = 'states'
 
-    db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
-                         passwd=argv[2], db=argv[3])
-
-    with db.cursor() as cur:
-        cur.execute("""
-            SELECT cities.id, cities.name
-            FROM cities
-            JOIN states
-            ON cities.state_id = states.id
-            WHERE states.name LIKE BINARY %(state_name)s
-            ORDER BY cities.id ASC
-        """, {
-            'state_name': argv[4]
-        })
-
-        rows = cur.fetchall()
-
-    if rows is not None:
-        print(", ".join([row[1] for row in rows]))
+    id = Column(Integer, primary_key=True)
+    name = Column(String(128), nullable=False)

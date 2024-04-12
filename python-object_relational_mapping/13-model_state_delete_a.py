@@ -11,8 +11,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    """
-    Deletes State objects on the database.
+    """Deletes State objects on the database.
     """
 
     db_uri = 'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
